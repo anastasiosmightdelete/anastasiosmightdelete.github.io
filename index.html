@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anastasios Stamatakis - Visual Arts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0a0a0a;
+      color: #ddd;
+      line-height: 1.6;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB8UlEQVR4Xu3bQQ3CMBAF0FfQJx+6BdMPSAYhMJk5pIbH4iC5kqTiZh1Z5Y9y+q/0aAAAAAAAAGCZ+8F9/t4+o17vwVvWcW+YMFvvwjL8OO0HnZgO4dfvYz+37r+j4GBkAAAD4LeW1/1Y5Zy1mbz+U/3U9s7zbsddL8R3q/5BgY2AAAAODJm5U3BqP0WZ2a/Y7x2qsv1f8p3m4uBgAAAADwT1k0f89sP9bRkAAPj3qf+oX16FAAAAICXU4QMAAAAAAAAoH+UPADA5es14AAAAASUVORK5CYII=');
+      background-repeat: repeat;
+      background-size: contain;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-style: italic;
+      color: #aaa;
+      font-size: 1.2em;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .video-card {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: scale(1.02);
+    }
+
+    .video-card img {
+      width: 100%;
+      display: block;
+      filter: brightness(0.8);
+    }
+
+    .video-card .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background: rgba(255,255,255,0.7);
+      clip-path: polygon(20% 15%, 80% 50%, 20% 85%);
+      transition: background 0.3s ease;
+    }
+
+    .video-card:hover .play-button {
+      background: rgba(255,255,255,0.9);
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .about {
+      font-weight: 300;
+      color: #bbb;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Anastasios Stamatakis</h1>
+      <p>απουσία φωτός</p>
+    </header>
+
+    <section class="video-grid">
+      <div class="video-card">
+        <img src="https://via.placeholder.com/600x350?text=Cinematographer" alt="Cinematographer">
+        <div class="play-button"></div>
+      </div>
+      <div class="video-card">
+        <img src="https://via.placeholder.com/600x350?text=VFX+Reel" alt="VFX Reel">
+        <div class="play-button"></div>
+      </div>
+      <div class="video-card">
+        <img src="https://via.placeholder.com/600x350?text=Drone+Footage" alt="Drone Footage">
+        <div class="play-button"></div>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+
+    <footer>
+      © 2025 Anastasios Stamatakis - Visual Arts
+    </footer>
+  </div>
+</body>
+</html>
